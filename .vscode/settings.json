@@ -1,3 +1,4 @@
 {
-  "python.analysis.typeCheckingMode": "basic"
+  "python.analysis.typeCheckingMode": "basic",
+  "dbtPowerUser.pythonPath": "D:\\Data Engineering\\DBT\\dbt_project_databricks\\.venv\\Scripts\\python.exe"
 }

@@ -1,8 +1,31 @@
+version: 2
+
 models:
-  - name: bronze_date #  Must match the filename of a model -- including case sensitivity.
+  - name: bronze_date
     config:
       materialized: view
+      schema: bronze
 
   - name: bronze_product
     config:
       materialized: view
+
+  - name: bronze_sales
+    columns:
+      - name: sales_id
+        tests:
+          - unique
+          - not_null
+
+  - name: bronze_store
+    columns:
+      - name: store_sk
+        tests:
+          - unique
+          - not_null
+      - name: store_name
+        tests:
+          - accepted_values:
+              values: ['MegaMart Manhattan', 'MegaMart Brooklyn', 'MegaMart Austin', 'MegaMart San Jose', 'MegaMart Toronto']
+              config:
+                severity: warn

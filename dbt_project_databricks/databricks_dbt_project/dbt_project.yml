@@ -41,3 +41,7 @@ models:
     gold:
       +materialized: table
       schema: gold
+
+seeds:
+  databricks_dbt_project:
+    +schema: bronze

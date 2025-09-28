@@ -1,4 +1,6 @@
 {
   "dbtPowerUser.pythonPath": "D:\\Data Engineering\\DBT\\dbt_project_databricks\\.venv\\Scripts\\python.exe",
-  "python.analysis.typeCheckingMode": "basic"
+  "python.analysis.typeCheckingMode": "basic",
+  "dbt.perspectiveTheme": "Pro Dark",
+  "dbt.enableNewLineagePanel": true
 }

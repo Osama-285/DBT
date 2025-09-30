@@ -36,6 +36,12 @@ models:
       +schema: staging
       +materialized: view
 
-      dimensions:
-        +schema: core
-        +materialized: table
+    dimensions:
+      +schema: core
+      +materialized: table
+
+    facts:
+      +schema: core
+      +materialized: table 
+      
+

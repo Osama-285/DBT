@@ -43,5 +43,8 @@ models:
     facts:
       +schema: core
       +materialized: table 
-      
+    
+    marts:
+      +schema: marts
+      +materialized: table
 
